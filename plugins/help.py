@@ -8,7 +8,7 @@ from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, Usern
 UPDATES_CHANNEL = C.UPDATES_CHANNEL
 logging.basicConfig(level=logging.INFO)
 
-@Client.on_message(filters.incoming & filters.command(['start', 'start@ForceSubscriber_UBot']))
+@Client.on_message(filters.incoming & filters.command(['start', 'start@JNS_FSUB_BOT']))
 def _start(client, message):
     update_channel = UPDATES_CHANNEL
     if update_channel:
@@ -17,7 +17,7 @@ def _start(client, message):
             if user.status == "kicked":
                client.send_message(
                    chat_id=message.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/UniversalBotsSupport).",
+                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/jns_fc_bots).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -59,11 +59,11 @@ def _start(client, message):
 	reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/UniversalBotsUpdate"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/UniversalBotsSupport")
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/jns_bots"),
+                    InlineKeyboardButton("Support Group", url="https://t.me/jns_fc_bots")
                 ],
                 [
-                    InlineKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/JigarVarma2005")
+                    InlineKeyboardButton("🧑‍💻MOVIES🧑‍💻", url="https://t.me/FCfilmcornerfc")
                 ]
             ]
         ),
@@ -79,14 +79,14 @@ def _source_code(client, message):
 	reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Souce Code", url="https://github.com/Jigarvarma2005/ForceSub_Bot")
+                    InlineKeyboardButton("Dev", url="https://t.me/jintons")
                 ],
                 [
-                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/UniversalBotsUpdate"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/UniversalBotsSupport")
+                    InlineKeyboardButton("Join Updates Channel", url="https://t.me/jns_bots"),
+                    InlineKeyboardButton("Support Group", url="https://t.me/jns_fc_bots")
                 ],
                 [
-                    InlineKeyboardButton("🧑‍💻Devloper🧑‍💻", url="https://t.me/JigarVarma2005")
+                    InlineKeyboardButton("🧑‍💻MOVIES🧑‍💻", url="https://t.me/FCfilmcornerfc")
                 ]
             ]
         ),
@@ -103,7 +103,7 @@ def _help(client, message):
             if user.status == "kicked":
                client.send_message(
                    chat_id=message.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/UniversalBotsSupport).",
+                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/jns_fc_bots).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
