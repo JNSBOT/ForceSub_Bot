@@ -54,15 +54,15 @@ def _check_member(client, message):
       except UserNotParticipant:
         try:
           sent_message = message.reply_text(
-              " {} , you are not subscribed to my channel yet. Please join using below button and press the UnMute Me button to unmute yourself.".format(message.from_user.mention, channel, channel),
+              " {} , you are not subscribed ⚠️ to my channel yet. Please join using below button and press the 🎯 UnMute Me button to unmute yourself.".format(message.from_user.mention, channel, channel),
               disable_web_page_preview=True,
              reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("Subscribe My Channel", url=channel_url)
+                    InlineKeyboardButton("🎯Subscribe My Channel🎯", url=channel_url)
                 ],
                 [
-                    InlineKeyboardButton("UnMute Me", callback_data="onUnMuteRequest")
+                    InlineKeyboardButton("🧑🏻‍🦯UnMute Me", callback_data="onUnMuteRequest")
                 ]
             ]
         )
@@ -76,7 +76,7 @@ def _check_member(client, message):
         client.leave_chat(chat_id)
 
 
-@Client.on_message(filters.command(["forcesubscribe", "fsub", "fsub@ForceSubscriber_UBot", "forcesubscribe@ForceSubscriber_UBot"]) & ~filters.private)
+@Client.on_message(filters.command(["forcesubscribe", "fsub", "fsub@JNS_FSUB_BOT", "forcesubscribe@JNS_FSUB_BOT"]) & ~filters.private)
 def config(client, message):
   user = client.get_chat_member(message.chat.id, message.from_user.id)
   if user.status is "creator" or user.user.id in Config.SUDO_USERS:
@@ -88,7 +88,7 @@ def config(client, message):
         sql.disapprove(chat_id)
         message.reply_text("❌ **Force Subscribe is Disabled Successfully.**")
       elif input_str.lower() in ('clear'):
-        sent_message = message.reply_text('**Unmuting all members who are muted by me...**')
+        sent_message = message.reply_text('**Unmuting all members who are muted by me...✅**')
         try:
           for chat_member in client.get_chat_members(message.chat.id, filter="restricted"):
             if chat_member.restricted_by.id == (client.get_me()).id:
