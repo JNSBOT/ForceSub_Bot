@@ -29,7 +29,7 @@ def _start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("❤️ @JNS_BOTS ❤️", url=f"https://t.me/{update_channel}")
+                            InlineKeyboardButton("❤️ JNS BOTS ❤️", url=f"https://t.me/{update_channel}")
                         ]
                     ]
                 ),
@@ -115,7 +115,7 @@ def _help(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("❤️ @JNS_BOTS ❤️", url=f"https://t.me/{update_channel}")
+                            InlineKeyboardButton("❤️ JNS BOTS ❤️", url=f"https://t.me/{update_channel}")
                         ]
                     ]
                 ),
