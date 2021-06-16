@@ -72,7 +72,7 @@ def _start(client, message):
         )
 
 
-@Client.on_message(filters.incoming & filters.command(['source_code', 'source_code@ForceSubscriber_UBot']))
+@Client.on_message(filters.incoming & filters.command(['source_code1', 'source_code1@ForceSubscriber_UBot']))
 def _source_code(client, message):
     client.send_message(message.chat.id,
         text=tr.SC_MSG.format(message.from_user.first_name, message.from_user.id),
@@ -94,7 +94,7 @@ def _source_code(client, message):
         reply_to_message_id=message.message_id
         )
 
-@Client.on_message(filters.incoming & filters.command(['help', 'help@ForceSubscriber_UBot']))
+@Client.on_message(filters.incoming & filters.command(['help', 'help@JNS_FSUB_BOT']))
 def _help(client, message):
     update_channel = UPDATES_CHANNEL
     if update_channel:
@@ -111,7 +111,7 @@ def _help(client, message):
         except UserNotParticipant:
             client.send_message(
                 chat_id=message.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**🤭Please Join My Updates Channel to use this Bot! 👿**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -125,7 +125,7 @@ def _help(client, message):
         except Exception:
             client.send_message(
                 chat_id=message.chat.id,
-                text="Hey use this command in my pm. \nFor more help ask in my [Support Group](https://t.me/UniversalBotsSupport).",
+                text="Hey use this command in my pm. \nFor more help ask in my [Support Group](https://t.me/jns_fc_bots).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -151,17 +151,17 @@ def help_answer(client, callback_query):
 def map(pos):
     if(pos==1):
         button = [
-            [InlineKeyboardButton(text = '-->', callback_data = "help+2")]
+            [InlineKeyboardButton(text = '⪼', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
         button = [
-            [InlineKeyboardButton(text = '<--', callback_data = f"help+{pos-1}")]
+            [InlineKeyboardButton(text = '⪻', callback_data = f"help+{pos-1}")]
         ]
     else:
         button = [
             [
-                InlineKeyboardButton(text = '<--', callback_data = f"help+{pos-1}"),
-                InlineKeyboardButton(text = '-->', callback_data = f"help+{pos+1}")
+                InlineKeyboardButton(text = '⪻', callback_data = f"help+{pos-1}"),
+                InlineKeyboardButton(text = '⪼', callback_data = f"help+{pos+1}")
             ],
         ]
     return button
