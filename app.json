@@ -1,7 +1,7 @@
 {
     "name": "Force Sub Bot",
     "description": "Python based bot to Force Users to sub a channel.",
-    "logo": "",
+    "logo": "https://telegra.ph/file/1a9c62a5fd9d764ab3d0e.jpg",
     "keywords": [
         "telegram",
         "pyrogram",
@@ -11,8 +11,8 @@
         "ForceSubBot"
     ],
     "repository": "https://github.com/Jigarvarma2005/ForceSub_Bot",
-    "website": "https://t.me/UniversalBotsUpdate",
-    "success_url": "https://t.me/UniversalBotsUpdate",
+    "website": "https://t.me/jns_bots",
+    "success_url": "https://t.me/jns_fc_bots",
     "env": {
         "API_HASH": {
             "description": "You API HASH from my.telegram.org",
@@ -30,7 +30,7 @@
             "required": true
         },
         "UPDATES_CHANNEL": {
-            "description": "Your bot updates channel username without @ or leave empty",
+            "description": "Your bot channel for force sub , username without @ or leave empty bot should be admin in it with invite permission",
             "value": "",
             "required": false
         },
