@@ -19,18 +19,18 @@ class Messages():
       HELP_MSG = [
         ".",
 
-        "**Force Subscribe \n__Force group members to join a specific channel before sending messages in the group.\nI will mute members if they not joined your channel and tell them to join the channel and unmute themself by pressing a button.__**",
+        "**Force Subscribe** \n **__Force group members** to **join** a **specific channel** before sending messages in the group.\nI will mute members **if they not joined your channel** and tell them to join the channel and unmute themself by pressing a button.__ \n **❤️ @JNS_BOTS ❤️**",
         
         """**Setup**\n__1) add me to group with ban permission 
 
 2) add me to Force sub channel with invite permission
 
 3) /ForceSubscribe {username or channel id } or /Fsub {username or channel id }
-\n**Note:** Only creator of the group can setup me and i will leave the chat if i am not an admin in the chat.__""",
+\n**Note:** Only creator of the group can setup me and i will leave the chat if i am not an admin in the chat.__ \n❤️ @JNS_BOTS ❤️""",
         
-        "**Commmands**\n__/ForceSubscribe - To get the current settings.\n/ForceSubscribe no/off/disable - To turn of ForceSubscribe.\n/ForceSubscribe {channel username or channel ID} - To turn on and setup the channel.\n/ForceSubscribe clear - To unmute all members who muted by me.\n\nNote: /FSub is an alias of /ForceSubscribe__",
+        "**Commmands**\n__/ForceSubscribe - To get the current settings.\n/ForceSubscribe no/off/disable - To turn of ForceSubscribe.\n/ForceSubscribe {channel username or channel ID} - To turn on and setup the channel.\n/ForceSubscribe clear - To unmute all members who muted by me.\n\nNote: /FSub is an alias of /ForceSubscribe__ \n❤️ @JNS_BOTS ❤️",
         
-       "**Devloped By @jns_bots**"
+       "**Devloped By ❤️ @JNS_BOTS ❤️**"
       ]
       SC_MSG = "**Hey [{}](tg://user?id={})**\n for more help ask in my support group👇👇 "
 
